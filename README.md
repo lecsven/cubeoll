@@ -3,6 +3,8 @@
 一套用于练习 **CFOP 中 OLL（顶层朝向）** 的网页工具：57 式图解、练习清单、交互训练器。纯静态页面，可安装到手机主屏并**离线使用**。
 
 > 在线 / 离线地址：**https://lecsven.github.io/cubeoll/**
+>
+> 复现 / 学习笔记：**[`docs/session-notes.md`](docs/session-notes.md)**（这份项目是怎么一步步做出来的）
 
 ## 功能
 
