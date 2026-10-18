@@ -83,9 +83,9 @@ bash app-src/build.sh        # 产出 CubeOLL.app（内置 4 个页面，离线�
 
 ## 数据来源
 
-公式与学习顺序取自知乎专栏《【魔方进阶】CFOP之OLL学习顺序》（乌杰魔方）：
+公式与学习顺序取自知乎专栏《【魔方进阶】CFOP之OLL学习顺序》（鸟杰魔方）：
 
-- https://zhuanlan.zhihu.com/p/50568053
+- https://zhuanlan.zhihu.com/p/49626173
 
 旋转记号方向参考 GAN 魔方教程：https://www.gancube.cn/3x3x3-cfop-guide-of-gancube/
 
