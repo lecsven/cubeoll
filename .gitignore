@@ -3,3 +3,4 @@ _旧版/
 app-src/
 CubeOLL.app/
 *.pdf
+build/

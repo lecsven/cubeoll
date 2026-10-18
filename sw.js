@@ -1,5 +1,5 @@
 /* CubeOLL service worker — precache the tools so they work offline. */
-const CACHE = 'cubeoll-v1';
+const CACHE = 'cubeoll-v2';
 const ASSETS = [
   './',
   './index.html',
