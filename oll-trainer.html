@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="zh" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OLL 连续练习训练器</title>
 <style>
   *{box-sizing:border-box;}
@@ -121,8 +121,8 @@
 <meta name="apple-mobile-web-app-title" content="CubeOLL">
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="icon" href="icon-192.png"><style id="navCss">
-  .topnav{display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:8px 16px;font-size:13px;
-    background:#eef0f3;border-bottom:1px solid #dcdfe4;color:#1f2328;position:relative;z-index:2;}
+  .topnav{display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:8px 104px 8px 16px;min-height:44px;font-size:13px;
+    background:#eef0f3;border-bottom:1px solid #dcdfe4;color:#1f2328;position:sticky;top:0;z-index:20;}
   .topnav a{color:inherit;text-decoration:none;padding:4px 11px;border-radius:999px;border:1px solid transparent;white-space:nowrap;}
   .topnav a:hover{background:rgba(127,127,127,.16);}
   .topnav a.on{background:#33383f;color:#fff;border-color:#33383f;font-weight:700;}
@@ -130,13 +130,12 @@
   html[data-theme="dark"] .topnav a:hover{background:rgba(255,255,255,.08);}
   html[data-theme="dark"] .topnav a.on{background:#ffd21f;color:#111;border-color:#ffd21f;}
   @media print{ .topnav{display:none;} }
-</style></head><body>
+</style></head><body><nav class="topnav" aria-label="导航"><a href="index.html">首页</a><a href="oll.html">图解</a><a href="oll-pairs.html">配对角标</a><a href="oll-practice.html">练习清单</a><a href="oll-trainer.html" class="on" aria-current="page">训练器</a><a href="oll-inverse.html">互逆练习</a></nav>
 <header>
   <h1>OLL 连续练习训练器</h1>
   <div class="modes"><button id="mA" class="on">A · 逐条（打乱→还原）</button><button id="mB">B · 连击手法流</button></div>
   <div class="stats" id="stats"></div>
-<button id="themeBtn" type="button" class="themeBtn inline">🌙 黑底</button></header>
-<nav class="topnav" aria-label="导航"><a href="index.html">首页</a><a href="oll.html">图解</a><a href="oll-pairs.html">配对角标</a><a href="oll-practice.html">练习清单</a><a href="oll-trainer.html" class="on" aria-current="page">训练器</a><a href="oll-inverse.html">互逆练习</a></nav>
+<button id="themeBtn" type="button" class="themeBtn inline">☀ 白底</button></header>
 <main>
   <div class="toolbar">
     <label>练习范围
@@ -302,4 +301,4 @@ load();
 try{ var hsh=location.hash.replace('#','').toUpperCase(); if(hsh==='A'||hsh==='B') state.mode=hsh; }catch(e){}
 render();
 </script>
-<script>if('serviceWorker' in navigator && location.protocol.indexOf('http')===0){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script><script>(function(){var K='ollTheme',h=document.documentElement;function set(t){h.setAttribute('data-theme',t);var b=document.getElementById('themeBtn');if(b)b.textContent=(t==='dark'?'☀ 白底':'🌙 黑底');}var s=null;try{s=localStorage.getItem(K);}catch(e){}set(s==='dark'?'dark':'light');var btn=document.getElementById('themeBtn');if(btn)btn.addEventListener('click',function(){var t=h.getAttribute('data-theme')==='dark'?'light':'dark';set(t);try{localStorage.setItem(K,t);}catch(e){}});})();</script></body></html>
+<script>if('serviceWorker' in navigator && location.protocol.indexOf('http')===0){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script><script>(function(){var K='ollTheme',h=document.documentElement;function set(t){h.setAttribute('data-theme',t);var b=document.getElementById('themeBtn');if(b)b.textContent=(t==='dark'?'☀ 白底':'🌙 黑底');}var s=null;try{s=localStorage.getItem(K);}catch(e){}set(s==='light'?'light':'dark');var btn=document.getElementById('themeBtn');if(btn)btn.addEventListener('click',function(){var t=h.getAttribute('data-theme')==='dark'?'light':'dark';set(t);try{localStorage.setItem(K,t);}catch(e){}});})();</script></body></html>

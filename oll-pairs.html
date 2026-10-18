@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh" data-theme="light">
+<html lang="zh" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +20,8 @@
   footer{text-align:center;color:var(--nm);font-size:12px;padding:20px;}
 </style>
 <style id="navCss">
-  .topnav{display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:8px 16px;font-size:13px;
-    background:#eef0f3;border-bottom:1px solid #dcdfe4;color:#1f2328;position:relative;z-index:2;}
+  .topnav{display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:8px 104px 8px 16px;min-height:44px;font-size:13px;
+    background:#eef0f3;border-bottom:1px solid #dcdfe4;color:#1f2328;position:sticky;top:0;z-index:20;}
   .topnav a{color:inherit;text-decoration:none;padding:4px 11px;border-radius:999px;border:1px solid transparent;white-space:nowrap;}
   .topnav a:hover{background:rgba(127,127,127,.16);}
   .topnav a.on{background:#33383f;color:#fff;border-color:#33383f;font-weight:700;}
@@ -49,13 +49,13 @@
 </style>
 </head>
 <body>
-<button id="themeBtn" class="themeBtn" type="button">🌙 黑底</button>
+<nav class="topnav" aria-label="导航"><a href="index.html">首页</a><a href="oll.html">图解</a><a href="oll-pairs.html" class="on" aria-current="page">配对角标</a><a href="oll-practice.html">练习清单</a><a href="oll-trainer.html">训练器</a><a href="oll-inverse.html">互逆练习</a></nav>
+<button id="themeBtn" class="themeBtn" type="button">☀ 白底</button>
 <header>
   <h1>OLL 图解 + 互逆配对</h1>
   <p>徽章＝「从复原态做本条 →（顶面歪就先 U 对齐）→ 做徽章指的那条 → 顶层复原」。忽略剩下的 PLL。</p>
   <p><b>⇄ 双向</b>：两条互为逆，先做哪条都行；<b>→ 单向</b>：只能“先本条、后徽章那条”；<span style="color:var(--accent)"><b>↻ 自练</b></span>：同一条做两遍即复原。</p>
 </header>
-<nav class="topnav" aria-label="导航"><a href="index.html">首页</a><a href="oll.html">图解</a><a href="oll-pairs.html" class="on" aria-current="page">配对角标</a><a href="oll-practice.html">练习清单</a><a href="oll-trainer.html">训练器</a><a href="oll-inverse.html">互逆练习</a></nav>
 <main>
   <p class="note">交互式逐步练习见 <a href="oll-inverse.html">oll-inverse.html</a>；说明见 <a href="docs/inverse-pairs.md">docs/inverse-pairs.md</a>。</p>
   <h2 class="grp">01 七条十字 O</h2>
@@ -502,6 +502,6 @@
 
 </main>
 <footer>由 build/build-pairs.js 生成 · 配对经程序逐一验证</footer>
-<script>(function(){var K='ollTheme',h=document.documentElement;function set(t){h.setAttribute('data-theme',t);var b=document.getElementById('themeBtn');if(b)b.textContent=(t==='dark'?'☀ 白底':'🌙 黑底');}var s=null;try{s=localStorage.getItem(K);}catch(e){}set(s==='dark'?'dark':'light');var b=document.getElementById('themeBtn');if(b)b.addEventListener('click',function(){var t=h.getAttribute('data-theme')==='dark'?'light':'dark';set(t);try{localStorage.setItem(K,t);}catch(e){}});})();</script>
+<script>(function(){var K='ollTheme',h=document.documentElement;function set(t){h.setAttribute('data-theme',t);var b=document.getElementById('themeBtn');if(b)b.textContent=(t==='dark'?'☀ 白底':'🌙 黑底');}var s=null;try{s=localStorage.getItem(K);}catch(e){}set(s==='light'?'light':'dark');var b=document.getElementById('themeBtn');if(b)b.addEventListener('click',function(){var t=h.getAttribute('data-theme')==='dark'?'light':'dark';set(t);try{localStorage.setItem(K,t);}catch(e){}});})();</script>
 </body>
 </html>
