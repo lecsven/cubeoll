@@ -82,6 +82,17 @@
 <meta name="apple-mobile-web-app-title" content="CubeOLL">
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="icon" href="icon-192.png">
+<style id="navCss">
+  .topnav{display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:8px 16px;font-size:13px;
+    background:#eef0f3;border-bottom:1px solid #dcdfe4;color:#1f2328;position:relative;z-index:2;}
+  .topnav a{color:inherit;text-decoration:none;padding:4px 11px;border-radius:999px;border:1px solid transparent;white-space:nowrap;}
+  .topnav a:hover{background:rgba(127,127,127,.16);}
+  .topnav a.on{background:#33383f;color:#fff;border-color:#33383f;font-weight:700;}
+  html[data-theme="dark"] .topnav{background:#0d0f12;border-bottom-color:#23272d;color:#e6e8eb;}
+  html[data-theme="dark"] .topnav a:hover{background:rgba(255,255,255,.08);}
+  html[data-theme="dark"] .topnav a.on{background:#ffd21f;color:#111;border-color:#ffd21f;}
+  @media print{ .topnav{display:none;} }
+</style>
 </head>
 <body>
 <button id="themeBtn" class="themeBtn" type="button">🌙 黑底</button>
@@ -90,6 +101,7 @@
   <p>公式与顺序取自知乎《【魔方进阶】CFOP之OLL学习顺序》（鸟杰魔方，<a href="https://zhuanlan.zhihu.com/p/49626173">p/49626173</a>）。</p>
   <p>黄色=已朝向 / 侧面露出黄；灰色=未朝向。俯视顶面，下方为前(F)。每格图形由该格公式反推生成，与公式严格对应。右上角可切换白底/黑底。</p>
 </header>
+<nav class="topnav" aria-label="导航"><a href="index.html">首页</a><a href="oll.html" class="on" aria-current="page">图解</a><a href="oll-pairs.html">配对角标</a><a href="oll-practice.html">练习清单</a><a href="oll-trainer.html">训练器</a><a href="oll-inverse.html">互逆练习</a></nav>
 <main>
   <details class="notationWrap" open><summary>记号说明 · 旋转方向</summary><section class="notation">
   <div class="ngridwrap">

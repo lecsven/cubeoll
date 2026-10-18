@@ -1,11 +1,14 @@
 /* CubeOLL service worker — precache the tools so they work offline. */
-const CACHE = 'cubeoll-v2';
+const CACHE = 'cubeoll-v3';
 const ASSETS = [
   './',
   './index.html',
   './oll.html',
+  './oll-pairs.html',
   './oll-practice.html',
   './oll-trainer.html',
+  './oll-inverse.html',
+  './assets/ollcases.js',
   './manifest.webmanifest',
   './apple-touch-icon.png',
   './icon-192.png',
